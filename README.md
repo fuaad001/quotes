@@ -1,6 +1,50 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+#### Description, 02/2019
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6. It is an online website that host different quotes from different people. The quotes can be up voted and down voted and the quote with the most up votes is the one that is highlighted. People can also contribute their own cutom quotes as they wish.
+
+#### By **Hussein Fuaad Mahmoud**
+
+## BDD
+
+| Behavior- Our program should handle: | Input Example- When it receives: | Output Example- It should return: |
+| :-------------: | :-------------: | :-------------: |
+| Item One       | Item Two       | Item Two       |
+
+## Setup/Installation Requirements
+
+* Open your browser browser.
+* Load gitHub on your browser.
+* Search for fuaad001/.... repository.
+* Fork the data onto your own personal repository.
+* To access the live website, click on this url https://fuaad001.github.io/quotes
+
+## Known Bugs
+
+No Bugs
+
+## Technologies Used
+
+CSS for styling.
+HTML for webpage design.
+Typescript for back-end.
+
+## Dependencies
+
+Angular CLI
+
+## Support and contact details
+
+Contact me using:
+Telephone: +(254) 751-579-367
+Email: husseinfuaad@hotmail.com
+
+### License and Copyright details
+
+The MIT License (MIT)
+Copyright (c) 2019**Hussein Fuaad Mahmoud**
+
 
 ## Development server
 
