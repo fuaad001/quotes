@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="row">
+    <form (ngSubmit) = 'submitQuote()' #quoteForm = 'ngForm'>
+      <div class="form-group">
+        <label for="quote">Quote</label>
+        <textarea rows="4" class="form-control" id="quote" required [(ngModel)] = "newQuote.quote" name="quote" #quote = 'ngModel'></textarea>
+
+        <div [hidden] = "quote.valid || quote.pristine" class="alert alert-warning">
+          <p>Quote is Required</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="author">Author Name</label>
+        <input type="text" class="form-control" id="author" required [(ngModel)] = "newQuote.author" name="author" #author = 'ngModel'>
+
+        <div [hidden] = "author.valid || author.pristine" class="alert alert-warning">
+          <p>Author Name is Required</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name">Uploaded by</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)] = "newQuote.name" name="name" #name = 'ngModel'>
+
+        <div [hidden] = "name.valid || name.pristine" class="alert alert-warning">
+          <p>Uploader's name is Required</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="date">Upload Date</label>
+        <input type="text" class="form-control" id="date" required [(ngModel)] = "newQuote.date" name="date" #date = 'ngModel' disabled>
+
+        <div [hidden] = "date.valid || date.pristine" class="alert alert-warning">
+          <p>Upload Date is Required</p>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-danger">Contribute Quote</button>
+      <button type="reset" class="btn btn-danger">Clear</button>
+    </form>
+  </div>
+</div>
