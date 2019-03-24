@@ -10,7 +10,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 | Behavior- Our program should handle: | Input Example- When it receives: | Output Example- It should return: |
 | :-------------: | :-------------: | :-------------: |
-| Item One       | Item Two       | Item Two       |
+| Enter Quote | An apple a day | Display quote: "An apple a day" |
+| Delete a quote | Delete Action | Deleted Quote |
+| Up Vote a Quote | Up vote action | Up votes + 1 |
+| Down Vote a Quote | Down vote action | Down votes + 1 |
 
 ## Setup/Installation Requirements
 
@@ -40,12 +43,6 @@ Contact me using:
 Telephone: +(254) 751-579-367
 Email: husseinfuaad@hotmail.com
 
-### License and Copyright details
-
-The MIT License (MIT)
-Copyright (c) 2019**Hussein Fuaad Mahmoud**
-
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -69,3 +66,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### License and Copyright details
+
+The MIT License (MIT)
+Copyright (c) 2019**Hussein Fuaad Mahmoud**
