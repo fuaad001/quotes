@@ -8,7 +8,7 @@
           <h5><em>Quote:</em></h5>
           <p id = "{{i}}" appHighlight> <em>"{{quote.quote}}"</em>  uploaded {{quote.date|dateCounter}} days ago</p>
 
-          <app-quote-details [quote] = 'quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
+          <app-quote-details [quote] = 'quote'  (click)="deleteQuote(index)"></app-quote-details>
         </div>
       </div>
     </div>
