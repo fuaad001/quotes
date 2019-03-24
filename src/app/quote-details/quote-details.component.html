@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <h5> <em>Description:</em> </h5>
+  <div class="row">
+    <p>
+      <strong>Author:</strong> <em>{{quote.author}}</em>
+    </p>
+    <p>
+      <strong>Submitted by:</strong> <em>{{quote.name}}</em>
+    </p>
+    <p>
+      <strong>Likes</strong> <em>{{quote.upVotes}}</em>
+    </p>
+    <p>
+      <strong>Dislikes</strong> <em>{{quote.downVotes}}</em>
+    </p>
+  </div>
+  <button type="button" class="btn btn-danger" (click) = quoteUpVote(quote) >UpVote</button>
+  <button type="button" class="btn btn-danger" (click) = quoteDownVote(quote)>DownVote</button>
+  <button class="btn btn-danger" (click) = 'quoteDelete(true)'>Delete Quote</button>
+</div>
