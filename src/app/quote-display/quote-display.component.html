@@ -1,20 +1,20 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-9">
+    <div class="col-md-8">
       <h2>Quotes</h2>
       <hr>
-      <div class = "row" *ngFor='let quote of quotes; let i = index'>
+      <div *ngFor='let quote of quotes; let i = index'>
         <div class="individual-quote">
           <h5><em>Quote:</em></h5>
           <p id = "{{i}}" appHighlight> <em>"{{quote.quote}}"</em>  uploaded {{quote.date|dateCounter}} days ago</p>
 
-          <app-quote-details [quote] = 'quote'  (click)="deleteQuote(index)"></app-quote-details>
+          <app-quote-details [quote] = 'quote'  (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
         </div>
       </div>
     </div>
 
     <div class="col-md-3">
-      <div>
+      <div class="fixed">
         <h2> <em>New Quote</em> </h2>
         <hr>
         <app-form (addQuote) = "addNewQuote($event)"></app-form>
