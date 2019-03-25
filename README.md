@@ -21,6 +21,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Load gitHub on your browser.
 * Search for fuaad001/.... repository.
 * Fork the data onto your own personal repository.
+* Clone project
+* run 'ng install' on terminal
+* run 'ng serve' on terminal
 * To access the live website, click on this url https://fuaad001.github.io/quotes
 
 ## Known Bugs
