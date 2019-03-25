@@ -35,7 +35,9 @@ export class QuoteDisplayComponent implements OnInit {
    }
  }
 
-  constructor() { }
+  constructor() {
+    let maxVotes = 0;
+  }
 
   ngOnInit() {
   }

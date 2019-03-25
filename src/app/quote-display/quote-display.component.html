@@ -7,9 +7,7 @@
       <div *ngFor='let quote of quotes; let i = index'>
         <div class="individual-quote">
           <h5><em>Quote:</em></h5>
-          <div id = "{{i}}" *ngIf = 'quote.upVotes < 5'>
-            <p id = "{{i}}" appHighlight> <em>"{{quote.quote}}"</em></p>
-          </div>
+          <p id = "{{i}}" appHighlight> <em>"{{quote.quote}}"</em></p>
           <p>Uploaded <strong>{{quote.date|dateCounter}}</strong> days ago on <strong>{{quote.date|date}}</strong></p>
 
           <app-quote-details [quote] = 'quote'  (isComplete) = 'deleteQuote($event,i)'></app-quote-details>

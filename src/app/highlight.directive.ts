@@ -9,7 +9,8 @@ export class HighlightDirective {
 
    @Input() quote: Quote;
 
-  constructor(private elem: ElementRef) {}
+  constructor(private elem: ElementRef) {
+  }
 
     @HostListener('click') onClicks() {
       this.highlight('red');
