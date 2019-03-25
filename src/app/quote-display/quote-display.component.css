@@ -5,6 +5,7 @@ h2, h3{
   background-color: #e83e8c;
   border-radius: 5px;
   color: white;
+  font-family: 'ZCOOL XiaoWei', serif;
 }
 
 .container-fluid{
@@ -22,7 +23,7 @@ h2, h3{
   background-color: rgba(255, 255, 255, 0.6);
   text-align: center;
   float: left;
-
+  font-family: 'Libre Baskerville', serif;
 }
 
 .col-md-3, .col-md-8{
@@ -36,6 +37,7 @@ h2, h3{
 
 .col-md-3{
   background-color: rgba(255, 255, 255, 0.9);
+  font-family: 'ZCOOL XiaoWei', serif;
 }
 
 .col-md-8{
@@ -48,7 +50,10 @@ h5{
   background-color: #17a2b8;
   color: white;
   padding: 1%;
+  font-family: 'Bad Script', 'cursive';
 }
+
+
 
 @media only screen and (min-width: 812px) {
   .fixed{

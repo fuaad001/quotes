@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/css?family=Bad+Script|Dancing+Script|Libre+Baskerville|ZCOOL+XiaoWei" rel="stylesheet">
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-8">
@@ -6,7 +7,8 @@
       <div *ngFor='let quote of quotes; let i = index'>
         <div class="individual-quote">
           <h5><em>Quote:</em></h5>
-          <p id = "{{i}}" appHighlight> <em>"{{quote.quote}}"</em>  uploaded {{quote.date|dateCounter}} days ago</p>
+          <p id = "{{i}}" appHighlight> <em>"{{quote.quote}}"</em></p>
+          <p>Uploaded <strong>{{quote.date|dateCounter}}</strong> days ago on <strong>{{quote.date|date}}</strong></p>
 
           <app-quote-details [quote] = 'quote'  (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
         </div>

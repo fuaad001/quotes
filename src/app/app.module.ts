@@ -9,6 +9,7 @@ import { FormComponent } from './form/form.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteDisplayComponent } from './quote-display/quote-display.component';
 import { DateCounterPipe } from './date-counter.pipe';
+import { HighestQuoteComponent } from './highest-quote/highest-quote.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DateCounterPipe } from './date-counter.pipe';
     FormComponent,
     QuoteDetailsComponent,
     QuoteDisplayComponent,
-    DateCounterPipe
+    DateCounterPipe,
+    HighestQuoteComponent
   ],
   imports: [
     BrowserModule,
