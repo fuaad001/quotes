@@ -4,10 +4,16 @@
     <div class="col-md-8">
       <h2>Quotes</h2>
       <hr>
+      <div class="topQuote">
+        <h5>Most Liked Quote <button type="button" (click) = checker()>Reveal Most Liked Quote</button></h5>
+        <p appHighlight>{{bestQuote}}</p>
+        <p> | {{bestAuthor}}</p>
+        <p>With {{mostVotes}} votes</p>
+      </div>
       <div *ngFor='let quote of quotes; let i = index'>
         <div class="individual-quote">
           <h5><em>Quote:</em></h5>
-          <p id = "{{i}}" appHighlight> <em>"{{quote.quote}}"</em></p>
+          <p id = "{{i}}"> <em>"{{quote.quote}}"</em></p>
           <p>Uploaded <strong>{{quote.date|dateCounter}}</strong> days ago on <strong>{{quote.date|date}}</strong></p>
 
           <app-quote-details [quote] = 'quote'  (isComplete) = 'deleteQuote($event,i)'></app-quote-details>

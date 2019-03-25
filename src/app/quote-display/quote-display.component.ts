@@ -16,6 +16,20 @@ export class QuoteDisplayComponent implements OnInit {
     new Quote(4,'You miss 100% of the shots you do not take', 'Lee Harvey', 'AbdulKadir Salim', new Date(2019, 2, 23), 0, 0)
   ]
 
+  mostVotes: number = 0
+  bestAuthor: string
+  bestQuote: string
+  checker() {
+    this.mostVotes = 0;
+    for(var x = 0; x < this.quotes.length; x++){
+      if(this.quotes[x].upVotes > this.mostVotes) {
+        this.mostVotes = this.quotes[x].upVotes;
+        this.bestAuthor = this.quotes[x].author;
+        this.bestQuote = this.quotes[x].quote;
+      }
+    }
+  }
+
    addNewQuote(quote){
      let quoteLength = this.quotes.length;
      quote.id = quoteLength + 1;
